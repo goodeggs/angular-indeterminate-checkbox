@@ -1,0 +1,40 @@
+{
+  "name": "angular-indeterminate-checkbox",
+  "version": "0.0.0",
+  "description": "AngularJS directive for three-state checkboxes.",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Max Edmands <me@maxedmands.com>"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/angular-indeterminate-checkbox.git"
+  },
+  "homepage": "https://github.com/goodeggs/angular-indeterminate-checkbox",
+  "bugs": "https://github.com/goodeggs/angular-indeterminate-checkbox/issues",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.7.x",
+    "karma": "^0.10.9",
+    "karma-coffee-preprocessor": "^0.1.3",
+    "karma-phantomjs-launcher": "^0.1.2",
+    "karma-mocha": "^0.1.1",
+    "uglify-js": "^2.4.12",
+    "browserify": "^3.32.0",
+    "bower": "^1.3.1",
+    "karma-sinon-chai": "^0.1.5"
+  },
+  "scripts": {
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "test": "karma start",
+    "prepublish": "bower -sj install",
+    "link": "browserify lib/index.js > angular-indeterminate-checkbox.js",
+    "minify": "uglifyjs angular-indeterminate-checkbox.js > angular-indeterminate-checkbox.min.js",
+    "build": "npm run compile && npm run link && npm run minify",
+  "test": "mocha",
+    "pretest": "npm run build"
+  }
+}
