@@ -1,6 +1,6 @@
 {
   "name": "angular-indeterminate-checkbox",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "AngularJS directive for three-state checkboxes.",
   "author": "Good Eggs <open-source@goodeggs.com>",
   "contributors": [
@@ -14,8 +14,7 @@
   },
   "homepage": "https://github.com/goodeggs/angular-indeterminate-checkbox",
   "bugs": "https://github.com/goodeggs/angular-indeterminate-checkbox/issues",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coffee-script": ">=1.7.x",
     "karma": "^0.10.9",
