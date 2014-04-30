@@ -34,7 +34,6 @@
     "link": "browserify lib/index.js > angular-indeterminate-checkbox.js",
     "minify": "uglifyjs angular-indeterminate-checkbox.js > angular-indeterminate-checkbox.min.js",
     "build": "npm run compile && npm run link && npm run minify",
-  "test": "mocha",
     "pretest": "npm run build"
   }
 }
